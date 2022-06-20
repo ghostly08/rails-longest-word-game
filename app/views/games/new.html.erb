@@ -4,4 +4,9 @@
 <h2><%=@letters%></h2>
 
 <h2>What is your longest word?</h2>
+<form action="/score" method = "post">
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
+</form>
