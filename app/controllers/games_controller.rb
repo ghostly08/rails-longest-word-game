@@ -5,11 +5,6 @@ class GamesController < ApplicationController
   end
 
   def score
-    if params[:letters] == @letters
-      return true
-    else
-      return false
-    end
-    raise
+   @letters = params[:letters].split
   end
 end
