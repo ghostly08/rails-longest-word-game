@@ -6,19 +6,45 @@ body {
   background-color: aliceblue;
 }
 
-h1 {
+
+.main-container {
   display: flex;
-  // position: absolute;
-  top: 10%;
+  flex-direction: column;
+}
+
+.main-container h1 {
   width: 100vw;
-  text-align: center;
-  font-size: 70px;
+  text-align: left;
+  font-size: 78px;
+}
+
+.main-container h2 {
+  text-align: left;
+  font-size: 30px;
 }
 
 .letters {
   display: flex;
   justify-content: space-around;
-  width: 30%;
-  font-size: 40px;
+  color: #E84A5F;
+  width: 89%;
+  font-size: 58px;
   list-style: none;
+  padding-left: 0;
+  margin: 0px;
+}
+
+.form-control {
+  width: 70%;
+  height: 27px;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+.btn-default {
+  color: whitesmoke;
+  background-color: #E84A5F;
+  font-size: 22px;
+  padding: 3px 14px;
+  border-radius: 5px;
 }
